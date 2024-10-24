@@ -1,0 +1,38 @@
+.main-orderauth {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 200px;
+    margin-top: 100px;
+}
+
+.login-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.register-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+@media (max-width: 567px) {
+
+    .main-orderauth {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-top: -50px;
+    }
+}

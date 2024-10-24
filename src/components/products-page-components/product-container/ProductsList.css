@@ -1,0 +1,26 @@
+.products-container {
+    width: 1050px;
+    height: 500px;
+    background: var(--form-background-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    margin-bottom: 100px;
+    padding: 20px 10px;
+    gap: 5px;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+  
+

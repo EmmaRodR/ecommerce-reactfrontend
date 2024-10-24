@@ -1,0 +1,58 @@
+.alerts-container.bottom {
+  position: fixed;
+  bottom: 50px; 
+  height: fit-content;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column-reverse; 
+  gap: 10px; 
+  z-index: 1000; 
+}
+
+
+.alert {
+    padding: 15px;
+    font-size: 15px; 
+    width: 300px;
+    height: 55px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    margin: 8px 0; 
+    transition: all 0.3s ease;
+}
+  
+.alert.success {
+  background-color: #d1f5dd; /* Más saturado y brillante */
+  color: #28a745; /* Verde más intenso */
+  border-left: 6px solid #28a745; /* Bordes más gruesos y definidos */
+  padding: 15px; /* Más espacio interno para darle un aspecto más moderno */
+  border-radius: 4px; /* Bordes suavizados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad */
+}
+
+.alert.warning {
+  background-color: #ffefcc; /* Amarillo más saturado */
+  color: #ff9800; /* Naranja más fuerte */
+  border-left: 6px solid #ff9800;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.alert.danger {
+  background-color: #fdd2d4; /* Rojo más vivo */
+  color: #e53935; /* Rojo más marcado */
+  border-left: 6px solid #e53935;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.alert .icon {
+  font-size: 24px; /* Íconos más grandes */
+  margin-right: 12px;
+  vertical-align: middle; /* Alineación mejorada */
+}

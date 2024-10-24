@@ -1,0 +1,67 @@
+.main-order {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 100vh;
+    gap: 20px;
+    padding: 50px;
+}
+
+.orderitem-list {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: auto;
+    width: 100dvb;
+    max-height: 400px;
+}
+
+.footer-order {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 100dvb;
+}
+
+.footer-order button {
+    margin: 0;
+}
+
+.order-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.order-buttons :first-child {
+    color: var(--primary-text-color);
+    background: var(--secondary-btn-background-color);
+}
+
+@media (max-width: 567px) {
+
+    .orderitem-list {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        overflow-y: auto;
+        width: 50dvb;
+        max-height: 400px;
+    }
+
+    .footer-order {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .footer-order button {
+        margin-top: 50px;
+        padding: 10px;
+    }
+    
+    .order-buttons {
+        display: flex;
+        gap: 10px;
+    }
+}

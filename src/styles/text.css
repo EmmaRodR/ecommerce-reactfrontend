@@ -1,0 +1,23 @@
+  
+  /*TITULOS Y PARRAFOS*/
+  
+  h3,h2,span {
+    color: var(--primary-text-color);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-large);
+  }
+
+  span {
+    font-size: 14px;
+  }
+  
+  /*LISTAS Y LINKS*/
+  
+  ul,li,a {
+    color: var(--primary-text-color);
+    cursor: pointer;
+  }
+  
+  p {
+    color: var(--primary-text-color);
+  }

@@ -1,0 +1,165 @@
+@import url(/src/styles/button.css);
+@import url(/src/styles/form.css);
+@import url(/src/styles/text.css);
+@import url(/src/styles/alerts.css);
+@import url(/src/styles/deletemodal.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap');
+
+
+/*ESTILOS DOCUMENTO BASE*/
+
+/*THEMES*/
+.light {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  
+  /*MAIN BACKGROUND*/
+  --background-color: linear-gradient(90deg, hsla(270, 55%, 75%, 1) 35%, rgba(222, 148, 220, 0.993) 90%);
+  --form-background-color: rgba(255, 255, 255, 0.1);
+  --error-alert-background-color: rgba(230, 85, 135, 0.45);
+  --deletemodal-background-color: rgba(140, 90, 180, 0.9);
+  --cart-background-color: linear-gradient(90deg, hsla(270, 55%, 75%, 1) 100%, rgb(225, 160, 225) 100%);
+  --cartcounter-background-color: rgb(255, 240, 245);
+  --dropdown-background-color: rgb(209, 148, 217);
+
+  /*INPUT*/
+  --input-background-color: rgba(255, 255, 255, 0.95);
+  --input-border-color: rgb(200, 140, 235);
+  --input-text-color: rgba(0, 0, 0, 0.75);
+
+  /*TEXT COLORS*/
+  --primary-text-color: rgb(255, 255, 255);
+  --secondary-text-color: rgb(130, 90, 175);
+  --primary-alert-text-color: rgb(255, 255, 255);
+  --primary-success-text-color: rgb(140, 85, 160);
+  --cartcounter-text-color: rgba(60, 60, 60, 0.8);
+
+  /*BUTTON-COLORS*/
+  --btn-background-color: rgba(245, 245, 245, 0.95);
+  --secondary-btn-background-color: rgba(165, 40, 110, 0.12);
+  --btn-border-color: rgb(255, 240, 250);
+  --primary-btn-text-color: rgb(120, 70, 140);
+
+  --btn-background-color-hover: rgb(160, 100, 200);
+  --btn-border-color-hover: rgb(210, 140, 210);
+  --primary-btn-text-color-hover: rgb(255, 245, 250);
+
+  /*CARD-COLORS*/
+  --card-background-color: rgba(223, 158, 176, 0.65);
+}
+
+.dark {
+
+/*BACKGROUND*/
+--background-color: linear-gradient(90deg, rgba(10, 0, 20, 0.7) 25%, rgba(0, 0, 0, 0.9) 90%);
+--cart-background-color: rgb(15, 15, 20);
+--form-background-color: rgb(25, 24, 40);
+--error-alert-background-color: rgb(87, 59, 123);
+--cartcounter-background-color: rgb(115, 60, 115);
+--deletemodal-background-color: rgb(28, 26, 40);
+--dropdown-background-color: rgb(25, 24, 40);
+
+/*INPUT*/
+--input-text-color: rgba(0, 0, 0, 0.85);
+--input-background-color: rgba(255, 255, 255, 0.75);
+--input-border-color: rgb(150, 120, 200);
+
+/*TEXT COLORS*/
+--primary-text-color: rgb(180, 150, 235);
+--secondary-text-color: rgb(145, 110, 200);
+--primary-alert-text-color: rgb(250, 250, 250);
+--primary-success-text-color: rgb(115, 80, 145);
+--cartcounter-text-color: rgb(255, 255, 255);
+
+/*BUTTON-COLORS*/
+--btn-background-color: rgb(130, 90, 200);
+--secondary-btn-background-color: rgba(166, 166, 166, 0.15);
+--btn-border-color: rgba(40, 35, 50, 0.8);
+--primary-btn-text-color: rgb(20, 20, 20);
+
+--btn-background-color-hover: rgb(85, 50, 150);
+--btn-border-color-hover: rgb(170, 140, 220);
+--primary-btn-text-color-hover: rgb(255, 250, 255);
+
+/*CARD-COLORS*/
+--card-background-color: rgba(20, 10, 50, 0.65);
+
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: black;
+  background: var(--background-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* FONTS */
+  --font-family-sans: 'Poppins', sans-serif;
+  --font-family-serif: 'Playfair Display', serif;
+
+  /* FONT SIZES */
+  --font-size-xs-small: 0.675rem;
+  /* 14px */
+  --font-size-small: 0.775rem;
+  /* 14px */
+  --font-size-base: 1rem;
+  /* 16px */
+  --font-size-medium: 1.125rem;
+  /* 18px */
+  --font-size-large: 1.25rem;
+  /* 20px */
+  --font-size-xlarge: 1.5rem;
+  /* 24px */
+
+  /* FONT WEIGHTS */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* LINE HEIGHT */
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+  --line-height-tight: 1.25;
+
+  /* LETTER SPACING */
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.05em;
+  --letter-spacing-wider: 0.1em;
+
+  /* TEXT COLORS */
+  --text-color-primary: #ffffff;
+  --text-color-secondary: #c4c4c4;
+  --text-color-muted: #7a7a7a;
+}
+
+* {
+  box-sizing: border-box;
+  /* Asegura que todos los elementos usen border-box */
+}
+
+body {
+  margin: 0;
+  /* Eliminar margen predeterminado */
+  padding: 0;
+  /* Eliminar relleno predeterminado */
+  transition: background 0.9s ease, color 0.7s ease;
+  /* tiempo de transición */
+
+}
+
+
+@media (max-width: 567px) {
+  
+  body {
+      font-size: 12px;
+  }
+
+  .container {
+      padding: 10px;
+      max-width: 100%;
+  }
+}
+
+

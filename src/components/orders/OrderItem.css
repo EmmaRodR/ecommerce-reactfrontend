@@ -1,0 +1,20 @@
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  color: var(--primary-text-color);
+  background: var(--form-background-color);
+  padding: 10px 15px;
+  margin: 8px auto;
+}
+
+.order-item li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 5px;
+  flex-grow: 1; /* Hace que los <li> se estiren */
+  margin: 0 5px; /* Para dar un poco de espacio entre los elementos */
+}

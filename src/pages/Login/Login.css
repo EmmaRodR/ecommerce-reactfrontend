@@ -1,0 +1,7 @@
+.main-login {
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+    align-items: start;
+    height: 100vh;
+}

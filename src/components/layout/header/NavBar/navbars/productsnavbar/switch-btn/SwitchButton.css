@@ -1,0 +1,9 @@
+.switch {
+    cursor: pointer;
+  }
+
+  @media (max-width: 567px) {
+    .switch {
+      font-size: 16px;
+    }
+  }
