@@ -9,7 +9,7 @@ const RegisterForm: React.FC = () => {
 
   if (isRegistered) {
     return (
-      <RedirectionAlert children={null} actionType="register" delay={0} />
+      <RedirectionAlert children={null} actionType="register"/>
     );
   }
 

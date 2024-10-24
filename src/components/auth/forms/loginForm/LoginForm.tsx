@@ -11,7 +11,7 @@ const LoginForm: React.FC = () => {
 
 
   if (isLogged) {
-    return <RedirectionAlert actionType="login" children={null} delay={0} />;
+    return <RedirectionAlert actionType="login" children={null}/>;
   }
 
   return (
