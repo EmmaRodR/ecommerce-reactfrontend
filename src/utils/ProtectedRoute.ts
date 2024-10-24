@@ -15,7 +15,7 @@ export default function ProtectedRouter({
   isAdmin,
 }: ProtectedRouteProps) {
   const { user, loading } = useAuth();
-  const { handleLogout } = useLogout();
+  const {logout} = useLogout();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -28,11 +28,11 @@ export default function ProtectedRouter({
       if (user) {
         if (isTokenExpired(user?.jwt)) {
           navigate("/login", { replace: true });
-          handleLogout();
+          logout();
         }
       }
     }
-  }, [navigate, user, handleLogout, isAdmin,loading]);
+  }, [navigate, user, logout, isAdmin,loading]);
 
   return children;
 }
