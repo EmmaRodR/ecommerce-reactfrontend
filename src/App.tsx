@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {Route, Routes, HashRouter } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
@@ -33,7 +33,7 @@ function App() {
         <AlertProvider>
           <ShowTableContextProvider>
             <CartContextProvider>
-              <Router>
+              <HashRouter>
                 <Header></Header>
                 <Cart />
                 <AlertContainer position="bottom" />
@@ -80,7 +80,7 @@ function App() {
                     ></Route>
                   </Routes>
                 </div>
-              </Router>
+              </HashRouter>
             </CartContextProvider>
           </ShowTableContextProvider>
           </AlertProvider>
