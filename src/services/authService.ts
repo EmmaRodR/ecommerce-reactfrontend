@@ -48,9 +48,11 @@ export const loginUser = async (data: LoginData): Promise<LoginResponse> => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        'Access-Control-Allow-Origin': 'true',
         Authorization: authHeader(),
       },
       body: JSON.stringify(data),
+      credentials: 'include'
     });
 
 
