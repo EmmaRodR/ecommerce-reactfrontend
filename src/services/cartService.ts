@@ -88,6 +88,8 @@ export const updateProductInCart = async (
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
+        Authorization: authHeader(),
+
       },
       body: JSON.stringify(updateToCartRequest),
     });
