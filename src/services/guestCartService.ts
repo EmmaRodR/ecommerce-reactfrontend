@@ -1,5 +1,5 @@
 import { AddToCartRequest, CartResponse, DeleteItemCartRequest, UpdateToCartRequest } from "../types/cartTypes";
-import { LOCAL_BASE_URL } from "../utils/api-consts";
+import { LOCAL_BASE_URL } from "./api-consts";
 import { handleResponseErrors } from "../utils/handler-errors/handleResponseErrors";
 import { authHeader } from "./authHeader";
 
@@ -87,6 +87,8 @@ export const fetchgGuestCart = async (sessionId: string): Promise<CartResponse> 
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
+          Authorization: authHeader(),
+          
         },
         body: JSON.stringify(updateToCartRequest),
       });

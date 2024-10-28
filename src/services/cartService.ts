@@ -2,7 +2,7 @@ import { AddToCartRequest, DeleteItemCartRequest, UpdateToCartRequest } from "./
 import { CartResponse } from "../types/cartTypes";
 import { authHeader } from "./authHeader";
 import { handleResponseErrors } from "../utils/handler-errors/handleResponseErrors";
-import { LOCAL_BASE_URL } from "../utils/api-consts";
+import { LOCAL_BASE_URL } from "./api-consts";
 
 export const fetchCart = async (userId: number): Promise<CartResponse> => {
   const url = new URL(`${LOCAL_BASE_URL}/api/v1/cart`);

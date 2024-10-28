@@ -4,7 +4,7 @@ import {
   ProductRequest,
   ProductResponse,
 } from "../types/productType";
-import { LOCAL_BASE_URL, PRODUCTS_BASE_URL } from "../utils/api-consts";
+import { LOCAL_BASE_URL, PRODUCTS_BASE_URL } from "./api-consts";
 import { handleResponseErrors } from "../utils/handler-errors/handleResponseErrors";
 import { authHeader } from "./authHeader";
 

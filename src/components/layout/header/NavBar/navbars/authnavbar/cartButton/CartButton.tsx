@@ -1,8 +1,8 @@
 import { PiShoppingCartSimpleFill } from "react-icons/pi";
 import { PiShoppingCartSimpleLight } from "react-icons/pi";
 import "./CartButton.css";
-import { useCart } from "../../../../../../../context/CartContext";
 import { useTheme } from "../../../../../../../context/ThemeContext";
+import { useCart } from "../../../../../../../context/CartContext";
 
 const CartButton = () => {
 
@@ -17,7 +17,7 @@ const CartButton = () => {
         <PiShoppingCartSimpleLight size={20} />
       )}
       
-      {cartItems.length > 0 && <span className="cart-count">{cartItems.length}</span>}
+      {cartItems ? <span className="cart-count">{cartItems.length}</span> : 0}
 
     </div>
   );

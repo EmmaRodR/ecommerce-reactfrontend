@@ -1,5 +1,5 @@
 import { Category, CategoryRequest, CategoryResponse } from "../types/categoryType"
-import { CATEGORIES_BASE_URL, LOCAL_BASE_URL } from "../utils/api-consts";
+import { CATEGORIES_BASE_URL, LOCAL_BASE_URL } from "./api-consts";
 import { authHeader } from './authHeader';
 import { handleResponseErrors } from '../utils/handler-errors/handleResponseErrors';
 import { BaseResponse } from "../types/productType";

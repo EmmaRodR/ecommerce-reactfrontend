@@ -1,6 +1,6 @@
 import { ApiError, LoginResponse, RegisterResponse } from "./../types/authTypes";
 import { LoginData, RegisterData } from "../types/authTypes";
-import { LOGIN_ENDPOINT_URL, REGISTER_ENDPOINT_URL } from "../utils/api-consts";
+import { LOGIN_ENDPOINT_URL, REGISTER_ENDPOINT_URL } from "./api-consts";
 import { authHeader } from "./authHeader";
 
 

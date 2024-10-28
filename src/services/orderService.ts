@@ -1,5 +1,5 @@
 import { OrderResponse } from "../types/orderTypes";
-import { LOCAL_BASE_URL } from "../utils/api-consts";
+import { LOCAL_BASE_URL } from "./api-consts";
 
 
 export const fetchOrders = async (userId: number): Promise<OrderResponse> => {

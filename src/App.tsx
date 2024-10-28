@@ -21,8 +21,12 @@ import { AlertProvider } from "./context/AlertContext";
 import OrderAuth from "./components/orders/OrderAuth/OrderAuth";
 import { MobileMenuProvider } from "./context/MobileMenuContext";
 import { AlertContainer } from "./components/common/alerts/toastAlert/AlertContainer";
+import KeepAlive from "./utils/KeepAliveServer";
 
 function App() {
+
+
+    KeepAlive();
 
 
   return (

@@ -20,7 +20,6 @@ const Cart = () => {
 
   const { createOrderHook } = useOrder();
 
-
   const { user } = useAuth();
 
   const navigate = useNavigate();
@@ -37,13 +36,23 @@ const Cart = () => {
     }
   };
 
+  const cartLength = () => {
+
+      if (cartItems && cartItems.length > 0) {
+        return cartItems.length
+      } else {
+        return 0;
+      }
+
+  }
+
   return (
     <div className={`shopping-cart ${isOpen ? "open" : ""}`}>
       <CartHeader toogleCart={toogleCart} />
 
       <ul className="cart-ul-list">
         <div className="cart-items-container">
-          {cartItems && cartItems.length > 0 ? (
+          {cartItems && cartLength() > 0 ? (
             <CartItemCard
               cartItems={cartItems}
               deleteItem={deleteCartItem}
