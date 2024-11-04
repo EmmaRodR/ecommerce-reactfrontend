@@ -67,8 +67,7 @@ const EditProductForm = () => {
 
         <SelectInput
           value={(formData.categoryName = selectedOption)}
-          onChange={handleCategoryChange}
-        />
+          onChange={handleCategoryChange} label={undefined} className={undefined}        />
 
         <button type="submit">Edit Product</button>
       </form>

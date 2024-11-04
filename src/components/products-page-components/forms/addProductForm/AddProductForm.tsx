@@ -47,7 +47,7 @@ const AddProductForm = () => {
         />
         {errors.price && <ErrorMessage message={errors.price}/>}
 
-           <SelectInput label='Category' value={formData.categoryName=selectedOption} onChange={handleCategoryChange}/>
+           <SelectInput label='Category' value={formData.categoryName = selectedOption} onChange={handleCategoryChange} className={undefined}/>
 
        <button type="submit">Add Product</button>
       </form>
