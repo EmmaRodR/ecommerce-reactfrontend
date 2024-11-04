@@ -13,12 +13,14 @@ interface CartItemCardProps {
 }
 
 const CartItemCard: React.FC<CartItemCardProps> = ({cartItems,deleteItem,updateItem}) => {
+
   return cartItems.map((item) => (
     <div  key={item.product.id} className="cart-item-card">
       <li>
         <p>{item.product.name}</p>
         <div className="counter">
-          <button onClick={() => updateItem(item.product.id,{actionType: 'REMOVE'})}>-</button>
+          <button onClick={() => 
+            updateItem(item.product.id,{actionType: 'REMOVE'})}>-</button>
           <p>{item.quantity}</p>
           <button onClick={() => updateItem(item.product.id,{actionType: 'ADD'})}>+</button>
         </div>

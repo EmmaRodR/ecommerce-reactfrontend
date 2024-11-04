@@ -3,7 +3,7 @@ import { useEditProducts } from "../../../../hooks/product/useEditProduct";
 import { ErrorMessage } from "../../../common/errors/ErrorMessage";
 import FormInput from "../../../common/inputs/FormInput";
 import { useEffect } from "react";
-import SelectInput from "../../../common/SelectInput";
+import SelectInput from "../../../common/inputs/SelectInput";
 import RedirectionAlert from "../../../common/alerts/RedirectionAlert";
 
 const EditProductForm = () => {

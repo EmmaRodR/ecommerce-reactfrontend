@@ -17,7 +17,7 @@ export const fetchCart = async (userId: number): Promise<CartResponse> => {
     },
   });
   const data: CartResponse = await response.json();
-  console.log(data);
+  console.log("Response",data);
   return data;
 };
 

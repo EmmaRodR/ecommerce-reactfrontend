@@ -2,28 +2,14 @@ import { useEffect } from "react";
 import Container from "../../components/layout/container/Container";
 import { getUserInfoInLocalStorage } from "../../utils/getLocalStorage";
 import { mergeGuestCartToUser } from "../../services/guestCartService";
+import { initializeGuestSession } from "../../utils/InitializeGuestSession";
 
 const Products: React.FC = () => {
-
-
-  const initializeGuestSession = () => {
-    let sessionId = sessionStorage.getItem("sessionId");
-    const userId = localStorage.getItem("user");
-
-      if (!userId && !sessionId) {
-        sessionId = generateSessionId(); // Esta función genera un ID único
-        sessionStorage.setItem("sessionId", sessionId);
-      }
-
-  };
-
-  const generateSessionId = () => {
-    return Math.random().toString(36).substring(2) + Date.now().toString(36);
-  };
 
   useEffect(() => {
     initializeGuestSession();
   }, []);
+  
 
   useEffect(() => {
     try {

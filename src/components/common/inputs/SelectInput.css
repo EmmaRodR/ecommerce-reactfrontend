@@ -1,0 +1,25 @@
+/* SelectInput.module.css */
+.selectButton {
+    appearance: none;         /* Elimina el estilo predeterminado del select */
+    -webkit-appearance: none; /* Compatibilidad con Safari */
+    -moz-appearance: none;    /* Compatibilidad con Firefox */
+    
+    background-color: var(--card-background-color); /* Color de fondo del botón */
+    color: #ffffff;            /* Color del texto */
+    padding: 8px 15px;        /* Espaciado interno */
+    border: none;              /* Sin borde */
+    border-radius: 5px;        /* Bordes redondeados */
+    font-size: 11px;           /* Tamaño de fuente */
+    cursor: pointer;           /* Cambia el cursor a puntero */
+}
+
+/* Para ocultar la flecha en navegadores como Firefox */
+.selectButton::-ms-expand {
+    display: none;
+}
+
+.selectButton:focus {
+    outline: none;             /* Remueve el contorno cuando está enfocado */
+    background-color: var(--card-background-color); /* Color de fondo del botón */
+    /* Cambia el color al hacer foco */
+}

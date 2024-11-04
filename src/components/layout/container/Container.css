@@ -1,4 +1,6 @@
 .display-container {
+    max-width: 1000px;
+    min-width: auto;
     width: 1000px;
     max-height: fit-content;
     background: var(--form-background-color);
@@ -44,6 +46,13 @@
     width: fit-content;
     height: fit-content;
     margin-bottom: 100px;
+}
+
+.filters-container{
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+
 }
 
 @media (max-width: 567px) {

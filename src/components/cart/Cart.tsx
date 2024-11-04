@@ -39,6 +39,7 @@ const Cart = () => {
   const cartLength = () => {
 
       if (cartItems && cartItems.length > 0) {
+        console.log(cartItems.length)
         return cartItems.length
       } else {
         return 0;
@@ -52,7 +53,7 @@ const Cart = () => {
 
       <ul className="cart-ul-list">
         <div className="cart-items-container">
-          {cartItems && cartLength() > 0 ? (
+          {cartLength() > 0 ? (
             <CartItemCard
               cartItems={cartItems}
               deleteItem={deleteCartItem}

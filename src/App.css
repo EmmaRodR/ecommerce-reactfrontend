@@ -25,6 +25,8 @@
   --input-background-color: rgba(255, 255, 255, 0.95);
   --input-border-color: rgb(200, 140, 235);
   --input-text-color: rgba(0, 0, 0, 0.75);
+  --searchbtn-color: rgb(209, 148, 217);
+
 
   /*TEXT COLORS*/
   --primary-text-color: rgb(255, 255, 255);
@@ -62,6 +64,7 @@
 --input-text-color: rgba(0, 0, 0, 0.85);
 --input-background-color: rgba(255, 255, 255, 0.75);
 --input-border-color: rgb(150, 120, 200);
+--searchbtn-color: rgb(85, 50, 150);
 
 /*TEXT COLORS*/
 --primary-text-color: rgb(180, 150, 235);
@@ -74,7 +77,7 @@
 --btn-background-color: rgb(130, 90, 200);
 --secondary-btn-background-color: rgba(166, 166, 166, 0.15);
 --btn-border-color: rgba(40, 35, 50, 0.8);
---primary-btn-text-color: rgb(20, 20, 20);
+--primary-btn-text-color: rgba(233, 233, 233, 0.911);
 
 --btn-background-color-hover: rgb(85, 50, 150);
 --btn-border-color-hover: rgb(170, 140, 220);

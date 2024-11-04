@@ -2,7 +2,6 @@ import { AuthUser } from "../context/UserContext";
 import { isTokenExpired } from "../utils/jwt/tokenExpiration";
 
 export function authHeader() {
-  
   const userStr = localStorage.getItem("user");
   let user: AuthUser | null = null;
 
@@ -16,7 +15,12 @@ export function authHeader() {
 
   if (user?.jwt) {
     console.log("Se realizo peticion y se utilizo authHeader");
-    return isTokenExpired(user.jwt) ? "Token Expirado" : "Bearer " + user.jwt;
+
+    if (isTokenExpired(user.jwt)) {
+      return "Expiro el token";
+    } else {
+      return `Bearer ${user.jwt}`;
+    }
   } else {
     return "Fallo el header de authorizacion";
   }

@@ -2,7 +2,7 @@ import FormInput from '../../../common/inputs/FormInput'
 import SuccesfulAlert from '../../../common/alerts/RedirectionAlert'
 import { useAddProducts } from '../../../../hooks/product/useAddProduct'
 import { ErrorMessage } from '../../../common/errors/ErrorMessage'
-import SelectInput from '../../../common/SelectInput'
+import SelectInput from '../../../common/inputs/SelectInput'
 import { useCategorySelector } from '../../../../hooks/useCategorySelector'
 
 const AddProductForm = () => {
@@ -47,7 +47,7 @@ const AddProductForm = () => {
         />
         {errors.price && <ErrorMessage message={errors.price}/>}
 
-           <SelectInput value={formData.categoryName=selectedOption} onChange={handleCategoryChange}/>
+           <SelectInput label='Category' value={formData.categoryName=selectedOption} onChange={handleCategoryChange}/>
 
        <button type="submit">Add Product</button>
       </form>

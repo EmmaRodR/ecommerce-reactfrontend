@@ -8,7 +8,7 @@ export function useLogout() {
   const userContext = useContext(UserContext);
   const {closeCart} = useCart();
 
-  const navigate = useNavigate(); // Usa useNavigate para obtener la función de navegación
+  const navigate = useNavigate(); 
 
   const logout = () => {
 

@@ -25,9 +25,8 @@ import KeepAlive from "./utils/KeepAliveServer";
 
 function App() {
 
-
+    //Funcion que realiza llamadas al servidor cada cierto tiempo.
     KeepAlive();
-
 
   return (
     <>
