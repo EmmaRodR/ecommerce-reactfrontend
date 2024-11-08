@@ -29,5 +29,19 @@
 .home-container p {
     font-size: 15px;
     font-weight: var(--font-weight-regular);
-    color: rgb(89, 52, 127);
+    color: var(--primary-text-color)
+}
+
+.icons-container {
+    display: flex;
+    gap: 30px;
+    padding: 50px 10px;
+    filter: invert(100%) brightness(100%);
+    transition: 0.5s;
+
+}
+
+.individual-icon-container:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }

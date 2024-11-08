@@ -19,7 +19,7 @@ export function useProducts() {
         setData(result);
         // eslint-disable-next-line @typescript-eslint/no-unused-vars
       } catch (err) {
-        setError("Error al cargar los productos");
+        setError("Error loading the products");
       } finally {
         setLoading(false);
         setRefetch(false);

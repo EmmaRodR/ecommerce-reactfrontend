@@ -37,7 +37,7 @@ const ProductsList: React.FC<ProductListProps> = ({
           <ProductCard key={product.id} product={product} />
         ))}
 
-      {loading && <p>Cargando productos...</p>}
+      {loading && <p>Loading products...</p>}
       {error && <p>{error}</p>}
     </>
   );
