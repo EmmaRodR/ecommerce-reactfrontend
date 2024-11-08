@@ -25,9 +25,9 @@ export const registerUser = async (data: RegisterData): Promise<RegisterResponse
       console.log(status);
 
       if (status === "CONFLICT") {
-        throw new Error("Usuario ya existe");
+        throw new Error("User already exists");
       } else {
-        throw new Error("Error en el servidor");
+        throw new Error("Server error");
       }
     }
 

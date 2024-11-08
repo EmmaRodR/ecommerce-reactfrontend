@@ -114,7 +114,7 @@ export const deleteProduct = async (id: number): Promise<void> => {
     handleResponseErrors(await response);
 
   } catch (err) {
-    console.log("Error al eliminar el producto:",err);
+    console.log("Error to delete a product:",err);
     throw err;
   }
 };

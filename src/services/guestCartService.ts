@@ -16,7 +16,6 @@ export const fetchgGuestCart = async (sessionId: string): Promise<CartResponse> 
       },
     });
     const data: CartResponse = await response.json();
-    console.log(data);
     return data;
   };
 

@@ -39,7 +39,6 @@ const Cart = () => {
   const cartLength = () => {
 
       if (cartItems && cartItems.length > 0) {
-        console.log(cartItems.length)
         return cartItems.length
       } else {
         return 0;

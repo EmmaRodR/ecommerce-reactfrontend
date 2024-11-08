@@ -14,14 +14,13 @@ export function authHeader() {
   }
 
   if (user?.jwt) {
-    console.log("Se realizo peticion y se utilizo authHeader");
 
     if (isTokenExpired(user.jwt)) {
-      return "Expiro el token";
+      return "Token is expired";
     } else {
       return `Bearer ${user.jwt}`;
     }
   } else {
-    return "Fallo el header de authorizacion";
+    return "The authheader fails";
   }
 }

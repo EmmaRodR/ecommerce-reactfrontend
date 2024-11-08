@@ -40,7 +40,7 @@ export const useLoginForm = () => {
     e.preventDefault();
 
     if (hasErrors(errors)) {
-      return console.log("Existen errores en el formulario");
+      return console.log("The form have some errors");
     }
 
     try {

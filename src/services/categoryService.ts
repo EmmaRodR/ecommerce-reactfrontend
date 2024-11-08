@@ -110,7 +110,7 @@ export const deleteCategory = async (id: number):Promise<void> => {
 
         handleResponseErrors(await response);
     } catch (err) {
-        console.log("Error al eliminar la categoria:",err);
+        console.log("Delete a category generate an error:",err);
         throw err;
     }
 

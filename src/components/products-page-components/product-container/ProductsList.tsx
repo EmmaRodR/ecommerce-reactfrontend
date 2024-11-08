@@ -22,7 +22,6 @@ const ProductsList: React.FC<ProductListProps> = ({
     product.categoryName.toLowerCase().includes(categoryFilter.toLowerCase())
   );
 
-  console.log(categoryFilter);
 
   const handleFiltered = () => {
     if (categoryFilter === "All" || categoryFilter === " ") {

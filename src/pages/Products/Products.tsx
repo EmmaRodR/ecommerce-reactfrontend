@@ -19,11 +19,9 @@ const Products: React.FC = () => {
       if (userId && sessionId) {
         mergeGuestCartToUser(sessionId, userId);
         sessionStorage.removeItem("sessionId");
-        console.log("Entro");
       }
     } catch (err) {
       console.log(err);
-      console.log("No entro");
     }
   }, []);
 

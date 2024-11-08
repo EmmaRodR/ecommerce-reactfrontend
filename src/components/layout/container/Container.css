@@ -65,6 +65,15 @@
         padding: 10px;
         max-width: 100%;
     }
+
+
+    .filters-container {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+     }
+    
+    
   }
   
   

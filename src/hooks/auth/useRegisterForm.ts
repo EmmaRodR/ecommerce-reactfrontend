@@ -43,13 +43,12 @@ export const useRegisterForm = () => {
       if (response.status == "201 CREATED") {
         setIsRegistered(true);
         createToast({variant:"success",text: "Register Succesful"});
-        console.log("Usuario registrado con exito");
       }
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (err: any) {
       console.log(err.message)
       if (err.message === "Failed to fetch") {
-        setServerErrors("Error en el servidor");
+        setServerErrors("Server error");
       } else {
         setServerErrors(err.message);
       }
@@ -64,7 +63,7 @@ export const useRegisterForm = () => {
     if (value.trim() === "") {
       errorMessage = "";
     } else if (name === "passwordVerify" && value !== formData.password) {
-      errorMessage = "Las contraseñas no coinciden";
+      errorMessage = "Passwords dont match";
     } else {
       errorMessage = fieldValidations(name, value);
     }

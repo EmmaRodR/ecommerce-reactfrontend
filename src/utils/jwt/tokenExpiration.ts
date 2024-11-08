@@ -24,10 +24,10 @@ export const isTokenExpired = (token: string): boolean => {
     const expirationDate = getTokenExpiration(token);
 
     if (expirationDate && expirationDate.getTime() < new Date().getTime()) {
-        console.log("Token Expirado");
+        console.log("Token Expired");
         return true;
     } else {
-        console.log("Token Vigente")
+        console.log("Valid Token")
         return false;
     }
 

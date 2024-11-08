@@ -5,17 +5,17 @@ export const handleResponseErrors = async (response: Response) => {
               
       switch (response.status) {
         case 400:
-          throw new Error("Datos inválidos");
+          throw new Error("Invalid data");
         case 401:
-          throw new Error("Token expirado");
+          throw new Error("Token expired");
         case 404:
-          throw new Error("Recurso no encontrado");
+          throw new Error("Resource not found");
         case 409:
-          throw new Error("Item o producto ya existente");
+          throw new Error("Product or item already exists");
         case 500:
-          throw new Error("Error en el servidor");
+          throw new Error("Server error");
         default:
-          throw new Error("Error desconocido");
+          throw new Error("Unknown error");
       }
     }
   };
