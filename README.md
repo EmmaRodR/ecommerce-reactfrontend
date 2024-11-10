@@ -60,9 +60,6 @@ Proyecto Frontend para una aplicación de ecommerce, desarrollado en **React** c
 
 ### Home
 ![Texto alternativo](https://i.postimg.cc/L6zF26nP/home.png)
-
---
-
 ### Login
 ![Texto alternativo](https://i.postimg.cc/1XFhgyBL/Login.png)
 ### Register
@@ -77,4 +74,3 @@ Proyecto Frontend para una aplicación de ecommerce, desarrollado en **React** c
 
 **Emmanuel Rodriguez** - [LinkedIn](https://www.linkedin.com)
 
-=======
