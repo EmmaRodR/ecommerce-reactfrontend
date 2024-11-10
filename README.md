@@ -26,3 +26,4 @@ Frontend para una aplicación de ecommerce, desarrollado en **React** con **Type
 ## 🧑‍💻 Autor
 
 **Emmanuel Rodriguez** - [LinkedIn](https://www.linkedin.com)
+
