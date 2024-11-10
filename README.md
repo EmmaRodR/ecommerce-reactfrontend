@@ -26,9 +26,6 @@ Proyecto Frontend para una aplicación de ecommerce, desarrollado en **React** c
 
 ## 🧩 Componentes Principales
 
-/src │ ├── /components # Componentes reutilizables │ ├── /auth # Componentes relacionados con la autenticación │ │ ├── Login.tsx # Componente de inicio de sesión │ │ ├── Register.tsx # Componente de registro de usuario │ │ └── AuthContext.tsx # Contexto de autenticación, gestiona el estado de login │ │ │ ├── /product # Componentes para manejar productos y categorías │ │ ├── ProductList.tsx # Lista de productos disponibles │ │ ├── ProductCard.tsx # Tarjeta de un producto individual │ │ ├── ProductDetail.tsx # Detalle de un producto │ │ └── CategoryFilter.tsx # Filtro de productos por categorías │ │ │ ├── /cart # Componentes para manejar el carrito de compras │ │ ├── Cart.tsx # Vista principal del carrito │ │ ├── CartItem.tsx # Elemento individual del carrito │ │ └── CartContext.tsx # Contexto de carrito, gestiona los productos añadidos │ │ │ └── /common # Componentes comunes como botones, headers, etc. │ ├── Navbar.tsx # Barra de navegación │ ├── Footer.tsx # Pie de página │ └── Button.tsx # Botón reutilizable │ ├── /contexts # Contextos globales para gestionar el estado │ ├── AuthContext.tsx # Contexto para manejar la autenticación global │ └── CartContext.tsx # Contexto para manejar el carrito global │ ├── /services # Servicios para manejar las peticiones HTTP │ ├── productService.ts # Servicio para interactuar con los productos en el backend │ ├── authService.ts # Servicio para manejar la autenticación │ └── cartService.ts # Servicio para interactuar con el carrito │ └── /styles # Archivos CSS organizados ├── global.css # Estilos globales └── product.css # Estilos específicos de los productos
-
-
 - **AuthContext**: Gestiona el estado de autenticación, controlando el acceso a rutas protegidas.
 - **CartContext**: Almacena y gestiona los productos añadidos al carrito, disponible en toda la aplicación.
 - **ProductList**: Muestra una lista de productos, con opciones de filtro y búsqueda.
@@ -46,7 +43,5 @@ Proyecto Frontend para una aplicación de ecommerce, desarrollado en **React** c
 ## 🧑‍💻 Autor
 
 **Emmanuel Rodriguez** - [LinkedIn](https://www.linkedin.com)
-<<<<<<< HEAD
 
 =======
->>>>>>> 31bdcfb1a8fb0b758f07ea28d92604a58c014574
