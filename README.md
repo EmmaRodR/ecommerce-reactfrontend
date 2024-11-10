@@ -1,50 +1,28 @@
-# 🛒 E-commerce API - Backend Spring Boot
+# 🛍️ E-commerce Frontend - React con TypeScript
 
-Proyecto backend para una aplicación de ecommerce, desarrollado en **Spring Boot** y **Java**. Este API ofrece gestión completa de usuarios, productos, categorías y órdenes, con una seguridad robusta mediante **JWT**. El proyecto incluye usuarios de prueba, está documentado con **Swagger** para facilitar la integración y prueba de endpoints, y utiliza una base de datos **PostgreSQL** alojada en Render.
-
-## 🔹 Explora la API con Swagger
-Para probar y documentar los endpoints de la API, he utilizado **Swagger**, que facilita la interacción y exploración de los recursos disponibles. Puedes ver la documentación en tiempo real en: **Documentación de Swagger**.
-
-> **Nota**: Los tiempos de espera y rendimiento de la app pueden depender del servidor donde está alojado. Algunas acciones o cargas de elementos pueden demorarse.
+Frontend para una aplicación de ecommerce, desarrollado en **React** con **TypeScript**. Esta aplicación se conecta con una API backend creada en Spring Boot, ofreciendo una experiencia de usuario interactiva y fluida sin el uso de librerías externas. El proyecto implementa **useContext** para gestionar el estado de autenticación y el carrito de compras de forma centralizada.
 
 ## 📚 Resumen del Proyecto
 
-- **CRUD Completo**: Gestión de productos, categorías, usuarios y pedidos.
-- **Autenticación Segura**: Implementada con JWT para manejar roles de administrador y cliente.
-- **Carrito y Órdenes**: Carrito de compras y generación de órdenes de compra.
-- **Documentación Swagger**: Explora la API con Swagger en tiempo real.
-- **Usuarios de Prueba**: Usuarios predeterminados (Admin e Invitado) para pruebas rápidas.
+- **Autenticación y Seguridad**: Sistema de autenticación JWT para login seguro y roles (administrador y cliente).
+- **Gestión de Productos y Categorías**: Visualización de productos organizados por categorías, con filtros y opciones de búsqueda.
+- **Carrito de Compras y Órdenes**: Carrito persistente que permite a los usuarios agregar, eliminar y modificar artículos antes de realizar una orden.
+- **Estado Global**: Uso de `useContext` para compartir el estado de autenticación y del carrito de manera centralizada en la aplicación, evitando el uso de estados dispersos y permitiendo una administración de datos uniforme y eficiente.
+- **Estilos Personalizados**: Diseñado exclusivamente con CSS para una apariencia profesional y sin librerías adicionales.
 
 ## 🛠️ Tecnologías y Herramientas Utilizadas
 
-- **Java 17**: Lenguaje de programación.
-- **Spring Boot 3**: Framework principal.
-- **Spring Data JPA**: Abstracción para la persistencia de datos usando Hibernate como ORM.
-- **Spring Security**: Manejo de seguridad.
-- **JWT**: Autenticación basada en tokens.
-- **Hibernate**: ORM para gestionar la persistencia de datos.
-- **Swagger**: Generación de documentación de la API.
-- **PostgreSQL**: Base de datos alojada en Render.
-- **Maven**: Construcción y gestión de dependencias.
+- **React** con **TypeScript**: Framework y lenguaje principal.
+- **Fetch API**: Para realizar peticiones HTTP al backend.
+- **CSS**: Estilos personalizados sin el uso de frameworks adicionales.
+- **React Context (useContext)**: Para gestión centralizada del estado de la autenticación y del carrito de compras.
 
-## 👥 Usuarios de Prueba
+## 🚀 Características Clave
 
-Para probar rápidamente, se incluyen dos usuarios preconfigurados:
+- **Interfaz Interactiva**: Navegación amigable para el usuario, con secciones de productos, categorías, y carrito de compras.
+- **Componentización**: Estructura de componentes reutilizables para mejorar la mantenibilidad y escalabilidad del código.
+- **Sin Dependencias Externas**: No se utilizan librerías de componentes UI ni de manejo de estado, lo cual garantiza un frontend ligero y centrado en React puro.
 
-- **Administrador**:
-  - **Usuario**: Admin
-  - **Contraseña**: ADMIN12345
-  - **Rol**: ADMIN
-
-- **Invitado**:
-  - **Usuario**: Customer
-  - **Contraseña**: Customer12345
-  - **Rol**: CUSTOMER
-
-## 📋 Endpoints Principales
-
-- **URL Base**: `https://ecommerce-springboot-backend.onrender.com`
-
-## Autor
+## 🧑‍💻 Autor
 
 **Emmanuel Rodriguez** - [LinkedIn](https://www.linkedin.com)
