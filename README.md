@@ -40,7 +40,7 @@ Proyecto Frontend para una aplicación de ecommerce, desarrollado en **React** c
 4. **Roles Diferenciados**: Los usuarios administradores tienen acceso a una interfaz de administración para gestionar productos y categorías.
 
 
-![Texto alternativo](https://postimg.cc/tYCMzbdR)
+![Texto alternativo](https://i.postimg.cc/L6zF26nP/home.png)
 
 
 
