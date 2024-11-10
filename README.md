@@ -39,9 +39,14 @@ Proyecto Frontend para una aplicación de ecommerce, desarrollado en **React** c
 3. **Gestión del Carrito**: Los usuarios pueden agregar productos al carrito, visualizar su contenido y ajustar cantidades antes de la compra.
 4. **Roles Diferenciados**: Los usuarios administradores tienen acceso a una interfaz de administración para gestionar productos y categorías.
 
+## 🔄 Preview
 
+### Home
 ![Texto alternativo](https://i.postimg.cc/L6zF26nP/home.png)
-
+![Texto alternativo](https://i.postimg.cc/1XFhgyBL/Login.png)
+![Texto alternativo](https://i.postimg.cc/Y9ZBqv66/Register.png)
+![Texto alternativo](https://i.postimg.cc/xTrVwbTY/Products.png)
+![Texto alternativo](https://i.postimg.cc/NG2wCxtp/Cart.png)
 
 
 ## 🧑‍💻 Autor
