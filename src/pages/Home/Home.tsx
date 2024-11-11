@@ -1,4 +1,14 @@
 import "./Home.css";
+import { FaJava } from "react-icons/fa";
+import { SiSpring } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
+
+
+
+
+
+
 const Home: React.FC = () => {
 
   return (
@@ -10,10 +20,10 @@ const Home: React.FC = () => {
           With an authentication and security system using JWT with Spring Boot Security, complemented by a web frontend built in React and CSS using TypeScript, without additional libraries. 
           </p>
           <div className="icons-container">
-           <div className="individual-icon-container"><img src="src/assets/icons8-java-50.png" alt="" /></div>
-           <div className="individual-icon-container"><img src="src/assets/spring-boot.svg" width="50" alt="" /></div>
-           <div className="individual-icon-container"><img src="src/assets/icons8-react-48.png"width={50} alt="" /></div>
-           <div className="individual-icon-container"><img src="src/assets/icons8-typescript-50.png" alt="" /></div>
+           <div className="individual-icon-container"><FaJava size={50}/></div>
+           <div className="individual-icon-container"><SiSpring size={50}/></div>
+           <div className="individual-icon-container"><FaReact size={50}/></div>
+           <div className="individual-icon-container"><SiTypescript size={50}/></div>
           </div>
         </div>
       </div>

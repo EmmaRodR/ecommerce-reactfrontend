@@ -69,8 +69,13 @@
 
     .filters-container {
         display: flex;
-        justify-content: space-evenly;
         width: 100%;
+        align-items: center;
+     }
+
+     .filters-container .selectButton {
+        width: 100px;
+        margin-right: 12px;
      }
     
     
