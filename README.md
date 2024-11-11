@@ -59,19 +59,19 @@ Proyecto Frontend para una aplicación de ecommerce, desarrollado en **React** c
 ## 🔄 Preview
 
 ### Home
-![Texto alternativo]([https://i.postimg.cc/2St5BS75/swaggerhome.png](https://i.postimg.cc/L6zF26nP/home.png))
+![Home](https://i.postimg.cc/L6zF26nP/home.png)
 ### Login
-![Texto alternativo](https://i.postimg.cc/1XFhgyBL/Login.png)
+![Login](https://i.postimg.cc/1XFhgyBL/Login.png)
 ### Register
-![Texto alternativo](https://i.postimg.cc/Y9ZBqv66/Register.png)
+![Register](https://i.postimg.cc/Y9ZBqv66/Register.png)
 ### Products
-![Texto alternativo](https://i.postimg.cc/xTrVwbTY/Products.png)
+![Products](https://i.postimg.cc/xTrVwbTY/Products.png)
 ### Manage Products
-![Texto alternativo](https://i.postimg.cc/qqTbTKFt/Manage-Products.png)
+![Manage Products](https://i.postimg.cc/qqTbTKFt/Manage-Products.png)
 ### Cart
-![Texto alternativo](https://i.postimg.cc/NG2wCxtp/Cart.png)
+![Cart](https://i.postimg.cc/NG2wCxtp/Cart.png)
 ### Orders
-![Texto alternativo](https://i.postimg.cc/kMQYyjVW/orders.png)
+![Orders](https://i.postimg.cc/kMQYyjVW/orders.png)
 
 
 ## 🧑‍💻 Autor
