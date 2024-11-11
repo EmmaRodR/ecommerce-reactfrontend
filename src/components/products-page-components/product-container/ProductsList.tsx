@@ -15,34 +15,34 @@ const ProductsList: React.FC<ProductListProps> = ({
   const { error, loading, data } = useProducts();
 
 
-  const searchFilter = data?.content.filter((product: Product) =>
+  const searchFilter = data?.content?.filter((product: Product) =>
     product.name.toLowerCase().includes(filter.toLowerCase())
-  );
+  ) || [];
 
-  const categoryFiltered = searchFilter?.filter((product: Product) =>
-    product.categoryName.toLowerCase().includes(categoryFilter.toLowerCase())
-  );
-
-
-  const handleFiltered = () => {
-    if (categoryFilter === "All" || categoryFilter === " ") {
-      return searchFilter; //
+  const categoryFiltered = searchFilter?.filter((product: Product) => {
+    if (categoryFilter === "All" || categoryFilter.trim() === "") {
+      return true;
     }
-    return categoryFiltered; //
-  };
+
+    return product.categoryName
+      .toLowerCase()
+      .includes(categoryFilter.toLowerCase());
+  });
+
 
   return (
     <>
-      {handleFiltered() ? (handleFiltered() &&
-        handleFiltered()?.map((product: Product) => (
+      {error && <p>{error}</p>}
+      {loading ? (
+        <p>Loading products...</p>
+      ) : (
+        categoryFiltered.map((product: Product) => (
           <ProductCard key={product.id} product={product} />
-        )))
-
-       : error && <p>{error}</p>}
-
-       {loading && <p>Loading products...</p>}
+        ))
+      )}
     </>
   );
 };
+
 
 export default ProductsList;
