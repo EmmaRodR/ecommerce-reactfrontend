@@ -59,9 +59,9 @@ Proyecto Frontend para una aplicación de ecommerce, desarrollado en **React** c
 ## 🔄 Preview
 
 ### Home
-![Home](https://i.postimg.cc/L6zF26nP/home.png)
+![Home](https://i.postimg.cc/vm7xK652/home.png)
 ### Login
-![Login](https://i.postimg.cc/1XFhgyBL/Login.png)
+![Login](https://i.postimg.cc/50xQWN34/Login.png)
 ### Register
 ![Register](https://i.postimg.cc/Y9ZBqv66/Register.png)
 ### Products
