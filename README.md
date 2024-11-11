@@ -1,6 +1,8 @@
 # 🛍️ E-commerce Frontend - React con TypeScript
 
-Proyecto Frontend para una aplicación de ecommerce, desarrollado en **React** con **TypeScript**. Esta aplicación se conecta con una API backend creada en Spring Boot, ofreciendo una experiencia de usuario interactiva y fluida sin el uso de librerías externas. El proyecto implementa **useContext** para gestionar el estado de autenticación y el carrito de compras de forma centralizada.
+Este es un proyecto Frontend para una aplicación de ecommerce, desarrollado en **React** con **TypeScript**. Esta aplicación se conecta con una API backend creada en Spring Boot, ofreciendo una experiencia de usuario interactiva y fluida sin el uso de librerías externas. El proyecto implementa **useContext** para gestionar el estado de autenticación y el carrito de compras de forma centralizada.
+
+La idea principal de este proyecto fue aprender React, sus conceptos basicos, estados y adentrarse en lo que es la programacion reactiva y funcional. Aprendi a utilizar custom hooks y hooks propios de la libreria React. Tambien aprendi a diseñar en CSS Nativo.
 
 ---
 
