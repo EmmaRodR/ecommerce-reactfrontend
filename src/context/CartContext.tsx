@@ -49,6 +49,8 @@ export const CartContextProvider: React.FC<CartProviderProps> = ({
   const [totalAmount, setTotalAmount] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [isAdding, setIsAdding] = useState(false);
+
 
   const {removeOrderHook} = useOrder();
   const {createToast} = useAlert();
@@ -89,9 +91,13 @@ export const CartContextProvider: React.FC<CartProviderProps> = ({
   };
 
   const addItemToCart = async (productId: number) => {
-    
+   
+    if (isAdding) return Promise.reject("Request already in progress");
+
     const userId = getUserInfoInLocalStorage()?.id;
     const sessionId = sessionStorage.getItem("sessionId");
+
+    setIsAdding(true); // Marcar como solicitud en curso
 
     try {
       const formData: AddToCartRequest = {
@@ -116,7 +122,8 @@ export const CartContextProvider: React.FC<CartProviderProps> = ({
       setError("Elemento ya existente");
       createToast({variant:"danger", text: "Element already exist in cart!"})
       setIsOpen(true);
-
+    } finally {
+      setIsAdding(false);
     }
   };
 
