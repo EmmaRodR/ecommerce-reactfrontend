@@ -4,6 +4,9 @@ import { authHeader } from "./authHeader";
 import { handleResponseErrors } from "../utils/handler-errors/handleResponseErrors";
 import { LOCAL_BASE_URL } from "./api-consts";
 
+let isLoading = false;
+
+
 export const fetchCart = async (userId: number): Promise<CartResponse> => {
   const url = new URL(`${LOCAL_BASE_URL}/api/v1/cart`);
   url.searchParams.append("userId", userId.toString());
@@ -25,6 +28,9 @@ export const addProductToCart = async (
   userId: number,
   addToCartRequest: AddToCartRequest
 ): Promise<CartResponse> => {
+  if (isLoading) return Promise.reject("Request already in progress");
+
+  isLoading = true;
   try {
     const url = new URL(`${LOCAL_BASE_URL}/api/v1/cart`);
     url.searchParams.append("userId", userId.toString());
@@ -41,10 +47,8 @@ export const addProductToCart = async (
 
     const responseData: CartResponse = await response.json();
     return responseData;
-    
-  } catch (err) {
-    console.log(err);
-    throw err;
+  } finally {
+    isLoading = false;
   }
 };
 
