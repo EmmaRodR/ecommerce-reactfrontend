@@ -37,14 +37,12 @@ const Cart = () => {
   };
 
   const cartLength = () => {
-
-      if (cartItems && cartItems.length > 0) {
-        return cartItems.length
-      } else {
-        return 0;
-      }
-
-  }
+    if (cartItems && cartItems.length > 0) {
+      return cartItems.length;
+    } else {
+      return 0;
+    }
+  };
 
   return (
     <div className={`shopping-cart ${isOpen ? "open" : ""}`}>
@@ -67,7 +65,7 @@ const Cart = () => {
       <CartTotal totalAmount={totalAmount} />
       <CartPurcharseBtn
         onClick={handleCheckout}
-        isDisabled={cartItems && cartItems.length <= 0}
+        isDisabled={cartLength() >= 0}
       />
     </div>
   );

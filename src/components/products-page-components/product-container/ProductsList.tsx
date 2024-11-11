@@ -14,6 +14,7 @@ const ProductsList: React.FC<ProductListProps> = ({
 }) => {
   const { error, loading, data } = useProducts();
 
+
   const searchFilter = data?.content.filter((product: Product) =>
     product.name.toLowerCase().includes(filter.toLowerCase())
   );
@@ -32,13 +33,14 @@ const ProductsList: React.FC<ProductListProps> = ({
 
   return (
     <>
-      {handleFiltered() &&
+      {handleFiltered() ? (handleFiltered() &&
         handleFiltered()?.map((product: Product) => (
           <ProductCard key={product.id} product={product} />
-        ))}
+        )))
 
-      {loading && <p>Loading products...</p>}
-      {error && <p>{error}</p>}
+       : error && <p>{error}</p>}
+
+       {loading && <p>Loading products...</p>}
     </>
   );
 };
