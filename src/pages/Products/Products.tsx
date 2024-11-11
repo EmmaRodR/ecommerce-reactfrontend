@@ -7,22 +7,23 @@ import { initializeGuestSession } from "../../utils/InitializeGuestSession";
 const Products: React.FC = () => {
 
   useEffect(() => {
-    initializeGuestSession();
-  }, []);
+    const initializeAndMergeCart = async () => {
+      try {
+        await initializeGuestSession();
   
-
-  useEffect(() => {
-    try {
-      const userId = getUserInfoInLocalStorage()?.id;
-      const sessionId = sessionStorage.getItem("sessionId");
-
-      if (userId && sessionId) {
-        mergeGuestCartToUser(sessionId, userId);
-        sessionStorage.removeItem("sessionId");
+        const userId = getUserInfoInLocalStorage()?.id;
+        const sessionId = sessionStorage.getItem("sessionId");
+  
+        if (userId && sessionId) {
+          await mergeGuestCartToUser(sessionId, userId);
+          sessionStorage.removeItem("sessionId");
+        }
+      } catch (err) {
+        console.log(err);
       }
-    } catch (err) {
-      console.log(err);
-    }
+    };
+  
+    initializeAndMergeCart();
   }, []);
 
   return (
