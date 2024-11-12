@@ -65,3 +65,13 @@
   }
 
 }
+
+@media (max-width: 375px) {
+
+  .searchbarcontainer {
+    position: absolute;
+    width: 250px;
+    left: 10px;
+  }
+
+}
