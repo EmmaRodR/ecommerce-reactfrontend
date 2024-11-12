@@ -4,11 +4,6 @@ import { SiSpring } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 
-
-
-
-
-
 const Home: React.FC = () => {
 
   return (
