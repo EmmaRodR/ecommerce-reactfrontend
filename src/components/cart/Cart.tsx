@@ -65,7 +65,7 @@ const Cart = () => {
       <CartTotal totalAmount={totalAmount} />
       <CartPurcharseBtn
         onClick={handleCheckout}
-        isDisabled={cartLength() >= 0}
+        isDisabled={cartLength() <= 0}
       />
     </div>
   );
