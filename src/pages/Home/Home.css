@@ -3,7 +3,7 @@
 
 .main-home {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
 }
@@ -46,11 +46,107 @@
     transition: 0.5s;
 }
 
-@media (max-width: 375px) {
+.homefooter {
+    display: flex;
+    margin-top: auto;
+    gap: 10px;
+    font-size: 12px;
+    padding: 120px 0; /* Ajusta el padding según el diseño que desees */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.contacticons {
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+}
+
+
+/* Pantallas grandes de móviles (hasta 425px) */
+@media (max-width: 425px) {
     .main-home {
-        height: 800px;
+        height: 900px;
+        padding: 0 15px; /* Espacio lateral para mayor comodidad */
     }
 
+    .home-container {
+        padding: 20px;
+    }
+
+    .home-container h3 {
+        font-size: 34px;
+    }
+
+    .home-container p {
+        font-size: 14px;
+    }
+    
+    .icons-container {
+        gap: 25px;
+        padding: 25px 15px;
+    }
+
+    .homefooter {
+        padding: 150px 10px;
+    }
 }
-  
+
+/* Pantallas medianas de móviles (hasta 375px) */
+@media (max-width: 375px) {
+    .main-home {
+        height: 850px;
+        padding: 0px 10px;
+    }
+
+    .home-container {
+        padding: 1px 15px;
+    }
+
+    .home-container h3 {
+        font-size: 30px;
+    }
+
+    .home-container p {
+        font-size: 12px;
+    }
+    
+    .icons-container {
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
+    .homefooter {
+        padding: 280px 5px;
+    }
+}
+
+/* Pantallas pequeñas de móviles (hasta 320px) */
+@media (max-width: 320px) {
+    .main-home {
+        height: 800px;
+        padding: 0 5px;
+    }
+
+    .home-container {
+        padding: 10px;
+    }
+
+    .home-container h3 {
+        font-size: 26px;
+    }
+
+    .home-container p {
+        font-size: 10px;
+    }
+    
+    .icons-container {
+        gap: 15px;
+        padding: 15px 5px;
+    }
+
+    .homefooter {
+        padding: 15px 5px;
+    }
+}

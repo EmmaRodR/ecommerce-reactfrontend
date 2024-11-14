@@ -13,7 +13,7 @@
   transition: background-color 0.3s ease, color 0.3s ease;
   
   /*MAIN BACKGROUND*/
-  --background-color: linear-gradient(90deg, hsla(270, 55%, 75%, 1) 35%, rgba(222, 148, 220, 0.993) 90%);
+  --background-color: linear-gradient(90deg, hsla(270, 55%, 75%, 1) 35%, rgba(205, 137, 202, 0.993) 90%);
   --form-background-color: rgba(255, 255, 255, 0.1);
   --error-alert-background-color: rgba(230, 85, 135, 0.45);
   --deletemodal-background-color: rgba(140, 90, 180, 0.9);

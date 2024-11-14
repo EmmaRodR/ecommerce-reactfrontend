@@ -80,5 +80,30 @@
     
     
   }
+
+  @media (max-width: 397px) {
+  
+    body {
+        font-size: 12px;
+    }
+  
+    .display-container {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+
+    .filters-container {
+        display: flex;
+        width: 100%;
+        align-items: center;
+     }
+
+     .filters-container .selectButton {
+        width: 60px;
+     }
+    
+    
+  }
   
   
