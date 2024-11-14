@@ -122,6 +122,34 @@
     }
 }
 
+@media (max-width: 374px) {
+    .main-home {
+        height: 850px;
+        padding: 0 5px;
+    }
+
+    .home-container {
+        padding: 10px;
+    }
+
+    .home-container h3 {
+        font-size: 26px;
+    }
+
+    .home-container p {
+        font-size: 10px;
+    }
+    
+    .icons-container {
+        gap: 15px;
+        padding: 15px 5px;
+    }
+
+    .homefooter {
+        padding: 100px 5px;
+    }
+}
+
 /* Pantallas pequeñas de móviles (hasta 320px) */
 @media (max-width: 320px) {
     .main-home {
