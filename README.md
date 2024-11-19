@@ -75,6 +75,24 @@ La idea principal de este proyecto fue aprender React, sus conceptos basicos, es
 ### Orders
 ![Orders](https://i.postimg.cc/kMQYyjVW/orders.png)
 
+---
+
+  🔹 **Explora la Demo hosteada en Render**:  
+  
+Los tiempos de espera y rendimiento de la app pueden estar condicionados por el servidor donde esta alojado. Talvez demore en realizar ciertas acciones o cargas de elementos.
+[Deploy on Render](https://ecommerce-reactfrontend.onrender.com/).
+
+Usuarios de prueba:
+ - Admin
+ - Usuario: `Admin`
+ - Contraseña: `Admin12345`
+
+Custom Client
+ - Usuario: `Customer`
+ - Contraseña: `Customer12345`
+
+
+---
 
 ## 🧑‍💻 Autor
 
